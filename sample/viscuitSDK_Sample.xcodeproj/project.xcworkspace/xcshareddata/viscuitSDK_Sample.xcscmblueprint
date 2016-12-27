@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "acb6360d-289c-4490-b665-3a944be0dba8++6122",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "acb6360d-289c-4490-b665-3a944be0dba8++6122" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "acb6360d-289c-4490-b665-3a944be0dba8++6122" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ABD5ABBC-789F-4B21-A7A2-5350111E301A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "acb6360d-289c-4490-b665-3a944be0dba8++6122" : "%5BVISCUIT%5D_IOS_Native_Sample\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "viscuitSDK_Sample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "viscuitSDK_Sample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/52.78.45.159\/svn",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "acb6360d-289c-4490-b665-3a944be0dba8++6122"
+    }
+  ]
+}
