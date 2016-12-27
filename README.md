@@ -16,9 +16,6 @@
     	* [2.3 콜백을 받기 위한 리스너 등록 및 광고 호출](#23-콜백을-받기-위한-리스너-등록-및-광고-호출)
     	* [2.4 광고 호출](#24-광고-호출)
 
-* [부록](#부록)
-	* [1. 카테고리 코드](#1-카테고리-코드)
-
 ---
 
 ## VISCUIT SDK 구성
@@ -38,20 +35,22 @@
 'App Transport Security Settings'
 'Allow Arbitary Loads'
 
-
 #### 1.2 스테이터스바 관련 설정
 > 비스킷 영상은 전체 화면으로 플레이 됩니다. info.plist에 아래 항목을 추가해 주세요.
 'View controller-based status bar appearance' 'NO'
 
+![new app](./img/sdk-1.png)
+
+
 ####  1.3 Project-Build Setting 설정
 > 'Project - Build Settings'에서 'Allow Non-modular Includes in Framework Modules' 값을 YES로 설정합니다.
 
-
+![build](./img/sdk-2.png)
 
 ##### 1.4 ViscuitSDK.framework 추가
 > 'Project-General'에서 'Embedded Binaries'에 viscuitSDK.framework를 추가한다. 정상적으로 추가 되었을 경우, 아래와 같이 추가 됩니다.
 
-
+![import](./img/sdk-3.png)
 
 ##### 1.5 필수 framework 추가
 > LinkedFrameworksandLibraries에 아래 항목들을 추가 합니다.
@@ -62,6 +61,7 @@
 - libsqlite3.tbd
 - SystemConfiguration.framework
 
+![framework](./img/sdk-4.png)
 
 ### 2. VISCUIT 사용하기
 
@@ -138,3 +138,4 @@ Callback 메소드 구현
 //광고 재생
 [ViscuitSDK viscuitShow:self];
 ```
+
