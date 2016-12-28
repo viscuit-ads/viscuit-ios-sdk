@@ -1,6 +1,0 @@
-framework module viscuitSDK {
-  umbrella header "viscuitSDK.h"
-
-  export *
-  module * { export * }
-}

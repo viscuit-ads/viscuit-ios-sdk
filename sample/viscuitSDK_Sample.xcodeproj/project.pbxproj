@@ -19,23 +19,22 @@
 		B736AC681E137E1300EEAD21 /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B736AC651E137E1300EEAD21 /* AppDelegate.h */; };
 		B736AC691E137E1300EEAD21 /* Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = B736AC661E137E1300EEAD21 /* Toast.h */; };
 		B736AC6A1E137E1300EEAD21 /* ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B736AC671E137E1300EEAD21 /* ViewController.h */; };
-		B7DC32CA1E12485F00E0B240 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7DC32C91E12485F00E0B240 /* Info.plist */; };
+		B7A3961B1E13B15400D3DA07 /* viscuitSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A3961A1E13B15400D3DA07 /* viscuitSDK.framework */; };
+		B7A3961C1E13B15400D3DA07 /* viscuitSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7A3961A1E13B15400D3DA07 /* viscuitSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B7DC32CC1E12486800E0B240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7DC32CB1E12486800E0B240 /* Assets.xcassets */; };
 		B7DC32D11E12487F00E0B240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DC32CD1E12487F00E0B240 /* LaunchScreen.storyboard */; };
 		B7DC32D21E12487F00E0B240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DC32CF1E12487F00E0B240 /* Main.storyboard */; };
-		B7DC32E61E12530400E0B240 /* viscuitSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DC32E51E12530400E0B240 /* viscuitSDK.framework */; };
-		B7DC32E71E12530400E0B240 /* viscuitSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7DC32E51E12530400E0B240 /* viscuitSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B7DC32E91E12643500E0B240 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BA63DC1D9524F900768E94 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B7DC32E41E12527300E0B240 /* Embed Frameworks */ = {
+		B7A3961D1E13B15400D3DA07 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B7DC32E71E12530400E0B240 /* viscuitSDK.framework in Embed Frameworks */,
+				B7A3961C1E13B15400D3DA07 /* viscuitSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,12 +56,11 @@
 		B736AC651E137E1300EEAD21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = viscuitSDK_Sample/AppDelegate.h; sourceTree = "<group>"; };
 		B736AC661E137E1300EEAD21 /* Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Toast.h; path = viscuitSDK_Sample/Toast.h; sourceTree = "<group>"; };
 		B736AC671E137E1300EEAD21 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = viscuitSDK_Sample/ViewController.h; sourceTree = "<group>"; };
+		B7A3961A1E13B15400D3DA07 /* viscuitSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = viscuitSDK.framework; sourceTree = "<group>"; };
 		B7DC32C91E12485F00E0B240 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = viscuitSDK_Sample/Info.plist; sourceTree = SOURCE_ROOT; };
 		B7DC32CB1E12486800E0B240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = viscuitSDK_Sample/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		B7DC32CE1E12487F00E0B240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = viscuitSDK_Sample/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		B7DC32D01E12487F00E0B240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = viscuitSDK_Sample/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		B7DC32DA1E124CDE00E0B240 /* viscuitSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = viscuitSDK.framework; path = viscuitSDK_Sample/viscuitSDK.framework; sourceTree = "<group>"; };
-		B7DC32E51E12530400E0B240 /* viscuitSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = viscuitSDK.framework; path = viscuitSDK_Sample/viscuitSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7A3961B1E13B15400D3DA07 /* viscuitSDK.framework in Frameworks */,
 				B7DC32E91E12643500E0B240 /* SystemConfiguration.framework in Frameworks */,
-				B7DC32E61E12530400E0B240 /* viscuitSDK.framework in Frameworks */,
 				88BA63DB1D9524F400768E94 /* libsqlite3.tbd in Frameworks */,
 				88BA63D91D9524EF00768E94 /* AdSupport.framework in Frameworks */,
 				88BA63D71D9524EA00768E94 /* CoreTelephony.framework in Frameworks */,
@@ -86,6 +84,7 @@
 		88AA89D41D950F0900E3A83B = {
 			isa = PBXGroup;
 			children = (
+				B7A3961A1E13B15400D3DA07 /* viscuitSDK.framework */,
 				B736AC651E137E1300EEAD21 /* AppDelegate.h */,
 				B736AC621E137DD600EEAD21 /* AppDelegate.m */,
 				B736AC661E137E1300EEAD21 /* Toast.h */,
@@ -93,7 +92,6 @@
 				B736AC671E137E1300EEAD21 /* ViewController.h */,
 				B736AC5D1E137D8100EEAD21 /* ViewController.m */,
 				B736AC5B1E137D8100EEAD21 /* main.m */,
-				B7DC32E51E12530400E0B240 /* viscuitSDK.framework */,
 				88AA89DF1D950F0900E3A83B /* viscuitSDK_Sample */,
 				88AA89DE1D950F0900E3A83B /* Products */,
 				88BA63D11D9524E100768E94 /* Frameworks */,
@@ -132,7 +130,6 @@
 		88BA63D11D9524E100768E94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B7DC32DA1E124CDE00E0B240 /* viscuitSDK.framework */,
 				88BA63DC1D9524F900768E94 /* SystemConfiguration.framework */,
 				88BA63DA1D9524F400768E94 /* libsqlite3.tbd */,
 				88BA63D81D9524EF00768E94 /* AdSupport.framework */,
@@ -174,7 +171,7 @@
 				88AA89DA1D950F0900E3A83B /* Frameworks */,
 				88AA89DB1D950F0900E3A83B /* Resources */,
 				B7DC32D61E124C5E00E0B240 /* Headers */,
-				B7DC32E41E12527300E0B240 /* Embed Frameworks */,
+				B7A3961D1E13B15400D3DA07 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,7 +188,7 @@
 		88AA89D51D950F0900E3A83B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "seokjun lee";
 				TargetAttributes = {
 					88AA89DC1D950F0900E3A83B = {
@@ -226,7 +223,6 @@
 			files = (
 				B7DC32D11E12487F00E0B240 /* LaunchScreen.storyboard in Resources */,
 				B7DC32CC1E12486800E0B240 /* Assets.xcassets in Resources */,
-				B7DC32CA1E12485F00E0B240 /* Info.plist in Resources */,
 				B7DC32D21E12487F00E0B240 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +267,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -287,6 +282,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -312,7 +308,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos10.0;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
@@ -322,7 +318,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -338,6 +333,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -356,7 +352,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos10.0;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "arm64 armv7 armv7s";
@@ -372,18 +368,17 @@
 				DEVELOPMENT_TEAM = 3YE7K4KCGM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/viscuitSDK_Sample_1.1.0",
-					"$(PROJECT_DIR)/viscuit_framework/Debug-iphonesimulator",
-					"$(PROJECT_DIR)/viscuit_framework",
 					"$(PROJECT_DIR)/viscuitSDK_Sample",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/viscuitSDK_Sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "wcorp.viscuitSDK-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -396,10 +391,8 @@
 				DEVELOPMENT_TEAM = 3YE7K4KCGM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/viscuitSDK_Sample_1.1.0",
-					"$(PROJECT_DIR)/viscuit_framework/Debug-iphonesimulator",
-					"$(PROJECT_DIR)/viscuit_framework",
 					"$(PROJECT_DIR)/viscuitSDK_Sample",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/viscuitSDK_Sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -408,6 +401,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "wcorp.viscuitSDK-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
