@@ -12,10 +12,13 @@
 		88BA63D71D9524EA00768E94 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BA63D61D9524EA00768E94 /* CoreTelephony.framework */; };
 		88BA63D91D9524EF00768E94 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BA63D81D9524EF00768E94 /* AdSupport.framework */; };
 		88BA63DB1D9524F400768E94 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BA63DA1D9524F400768E94 /* libsqlite3.tbd */; };
-		B7DC32C51E12481F00E0B240 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DC32C11E12481F00E0B240 /* AppDelegate.m */; };
-		B7DC32C61E12481F00E0B240 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DC32C21E12481F00E0B240 /* main.m */; };
-		B7DC32C71E12481F00E0B240 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DC32C31E12481F00E0B240 /* Toast.m */; };
-		B7DC32C81E12481F00E0B240 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DC32C41E12481F00E0B240 /* ViewController.m */; };
+		B736AC5F1E137D8100EEAD21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B736AC5B1E137D8100EEAD21 /* main.m */; };
+		B736AC601E137D8100EEAD21 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = B736AC5C1E137D8100EEAD21 /* Toast.m */; };
+		B736AC611E137D8100EEAD21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B736AC5D1E137D8100EEAD21 /* ViewController.m */; };
+		B736AC631E137DD600EEAD21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B736AC621E137DD600EEAD21 /* AppDelegate.m */; };
+		B736AC681E137E1300EEAD21 /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B736AC651E137E1300EEAD21 /* AppDelegate.h */; };
+		B736AC691E137E1300EEAD21 /* Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = B736AC661E137E1300EEAD21 /* Toast.h */; };
+		B736AC6A1E137E1300EEAD21 /* ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B736AC671E137E1300EEAD21 /* ViewController.h */; };
 		B7DC32CA1E12485F00E0B240 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7DC32C91E12485F00E0B240 /* Info.plist */; };
 		B7DC32CC1E12486800E0B240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7DC32CB1E12486800E0B240 /* Assets.xcassets */; };
 		B7DC32D11E12487F00E0B240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DC32CD1E12487F00E0B240 /* LaunchScreen.storyboard */; };
@@ -47,13 +50,13 @@
 		88BA63D81D9524EF00768E94 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		88BA63DA1D9524F400768E94 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		88BA63DC1D9524F900768E94 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		B7DC32BB1E12480B00E0B240 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../viscuitSDK_Sample/AppDelegate.h; sourceTree = "<group>"; };
-		B7DC32BC1E12480B00E0B240 /* Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Toast.h; path = ../viscuitSDK_Sample/Toast.h; sourceTree = "<group>"; };
-		B7DC32BD1E12480B00E0B240 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../viscuitSDK_Sample/ViewController.h; sourceTree = "<group>"; };
-		B7DC32C11E12481F00E0B240 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../viscuitSDK_Sample/AppDelegate.m; sourceTree = "<group>"; };
-		B7DC32C21E12481F00E0B240 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../viscuitSDK_Sample/main.m; sourceTree = "<group>"; };
-		B7DC32C31E12481F00E0B240 /* Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Toast.m; path = ../viscuitSDK_Sample/Toast.m; sourceTree = "<group>"; };
-		B7DC32C41E12481F00E0B240 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../viscuitSDK_Sample/ViewController.m; sourceTree = "<group>"; };
+		B736AC5B1E137D8100EEAD21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = viscuitSDK_Sample/main.m; sourceTree = "<group>"; };
+		B736AC5C1E137D8100EEAD21 /* Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Toast.m; path = viscuitSDK_Sample/Toast.m; sourceTree = "<group>"; };
+		B736AC5D1E137D8100EEAD21 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = viscuitSDK_Sample/ViewController.m; sourceTree = "<group>"; };
+		B736AC621E137DD600EEAD21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = viscuitSDK_Sample/AppDelegate.m; sourceTree = "<group>"; };
+		B736AC651E137E1300EEAD21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = viscuitSDK_Sample/AppDelegate.h; sourceTree = "<group>"; };
+		B736AC661E137E1300EEAD21 /* Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Toast.h; path = viscuitSDK_Sample/Toast.h; sourceTree = "<group>"; };
+		B736AC671E137E1300EEAD21 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = viscuitSDK_Sample/ViewController.h; sourceTree = "<group>"; };
 		B7DC32C91E12485F00E0B240 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = viscuitSDK_Sample/Info.plist; sourceTree = SOURCE_ROOT; };
 		B7DC32CB1E12486800E0B240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = viscuitSDK_Sample/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		B7DC32CE1E12487F00E0B240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = viscuitSDK_Sample/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
@@ -83,6 +86,13 @@
 		88AA89D41D950F0900E3A83B = {
 			isa = PBXGroup;
 			children = (
+				B736AC651E137E1300EEAD21 /* AppDelegate.h */,
+				B736AC621E137DD600EEAD21 /* AppDelegate.m */,
+				B736AC661E137E1300EEAD21 /* Toast.h */,
+				B736AC5C1E137D8100EEAD21 /* Toast.m */,
+				B736AC671E137E1300EEAD21 /* ViewController.h */,
+				B736AC5D1E137D8100EEAD21 /* ViewController.m */,
+				B736AC5B1E137D8100EEAD21 /* main.m */,
 				B7DC32E51E12530400E0B240 /* viscuitSDK.framework */,
 				88AA89DF1D950F0900E3A83B /* viscuitSDK_Sample */,
 				88AA89DE1D950F0900E3A83B /* Products */,
@@ -101,12 +111,7 @@
 		88AA89DF1D950F0900E3A83B /* viscuitSDK_Sample */ = {
 			isa = PBXGroup;
 			children = (
-				B7DC32BB1E12480B00E0B240 /* AppDelegate.h */,
-				B7DC32C11E12481F00E0B240 /* AppDelegate.m */,
-				B7DC32BC1E12480B00E0B240 /* Toast.h */,
-				B7DC32C31E12481F00E0B240 /* Toast.m */,
-				B7DC32BD1E12480B00E0B240 /* ViewController.h */,
-				B7DC32C41E12481F00E0B240 /* ViewController.m */,
+				B736AC641E137DE300EEAD21 /* src */,
 				B7DC32CD1E12487F00E0B240 /* LaunchScreen.storyboard */,
 				B7DC32CF1E12487F00E0B240 /* Main.storyboard */,
 				B7DC32CB1E12486800E0B240 /* Assets.xcassets */,
@@ -120,7 +125,6 @@
 		88AA89E01D950F0900E3A83B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B7DC32C21E12481F00E0B240 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -139,6 +143,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B736AC641E137DE300EEAD21 /* src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -146,6 +157,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B736AC681E137E1300EEAD21 /* AppDelegate.h in Headers */,
+				B736AC691E137E1300EEAD21 /* Toast.h in Headers */,
+				B736AC6A1E137E1300EEAD21 /* ViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,10 +238,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7DC32C51E12481F00E0B240 /* AppDelegate.m in Sources */,
-				B7DC32C61E12481F00E0B240 /* main.m in Sources */,
-				B7DC32C71E12481F00E0B240 /* Toast.m in Sources */,
-				B7DC32C81E12481F00E0B240 /* ViewController.m in Sources */,
+				B736AC631E137DD600EEAD21 /* AppDelegate.m in Sources */,
+				B736AC5F1E137D8100EEAD21 /* main.m in Sources */,
+				B736AC601E137D8100EEAD21 /* Toast.m in Sources */,
+				B736AC611E137D8100EEAD21 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
