@@ -20,11 +20,7 @@
 
 ## VISCUIT SDK 구성
 - viscuit_framework
- - viscuitSDK.framework-Debug-iphoneos (iphone framework)
- - viscuitSDK.framework-Debug-iphonesimulator (iphonesimulator framework)
-
 - 샘플 프로젝트
-- 연동가이드
 
 
 ## SDK 적용하기
