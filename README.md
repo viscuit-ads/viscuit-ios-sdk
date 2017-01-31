@@ -15,7 +15,7 @@
     	* [2.2 VISCUIT 초기화](#22-viscuit-초기화)
     	* [2.3 콜백을 받기 위한 리스너 등록 및 광고 호출](#23-콜백을-받기-위한-리스너-등록-및-광고-호출)
     	* [2.4 광고 호출](#24-광고-호출)
-    	* [3. Merge Framework적용](#3-Merge-Framework적용)
+    	* [3. Merge Framework적용](#3-merge-framework적용)
 
 ---
 
@@ -31,7 +31,7 @@ Architectures in the fat file: viscuitSDK.framework/viscuitSDK are: <font color=
 Architectures in the fat file: viscuitSDK.framework/viscuitSDK are: <font color="red">armv7 arm64</font>
 - sample (샘플 프로젝트)
 
-> merge framework를 이용하실 경우에는 [Merge Framework적용](#3-Merge-Framework적용)을 확인해 주세요.
+> merge framework를 이용하실 경우에는 [Merge Framework적용](#3-merge-framework적용)을 확인해 주세요.
 
 
 
