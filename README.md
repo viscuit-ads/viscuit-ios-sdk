@@ -15,12 +15,24 @@
     	* [2.2 VISCUIT 초기화](#22-viscuit-초기화)
     	* [2.3 콜백을 받기 위한 리스너 등록 및 광고 호출](#23-콜백을-받기-위한-리스너-등록-및-광고-호출)
     	* [2.4 광고 호출](#24-광고-호출)
+    	* [3. Merge Framework적용](#3-Merge-Framework적용)
 
 ---
 
 ## VISCUIT SDK 구성
-- viscuit_framework
-- 샘플 프로젝트
+- framework/merge/viscuit_framework (32bit / 64bit merge된 framework)
+> lipo -info merge/viscuitSDK.framework/viscuitSDK
+Architectures in the fat file: viscuitSDK.framework/viscuitSDK are: <font color="red">x86_64 i386 armv7 armv7s arm64</font>
+- framework/iphoneos/viscuit_framework (64bit)
+> lipo -info iphonesimulator/viscuitSDK.framework/viscuitSDK
+Architectures in the fat file: viscuitSDK.framework/viscuitSDK are: <font color="red">i386 x86_64</font>
+- framework/iphonesimulator/viscuit_framework (32bit)
+> lipo -info iphoneos/viscuitSDK.framework/viscuitSDK
+Architectures in the fat file: viscuitSDK.framework/viscuitSDK are: <font color="red">armv7 arm64</font>
+- sample (샘플 프로젝트)
+
+> merge framework를 이용하실 경우에는 [Merge Framework적용](#3-Merge-Framework적용)을 확인해 주세요.
+
 
 
 ## SDK 적용하기
@@ -135,3 +147,44 @@ Callback 메소드 구현
 [ViscuitSDK viscuitShow:self];
 ```
 
+
+
+####3. Merge Framework적용
+> viscuitSDK는 현재 pods으로 배포 되어 있지 않습니다. 따라서 가상머신으로 개발을 할때 가상머신용(32bit)과 배포용(64bit) 프래임워크를 상황에 맞게 import 해서 빌드 하여야 합니다.
+ 이 부분을 개선한 방법이 두가지 버전을 합친 merge framework입니다. 32bit/64bit 합쳐진 framework의 경우 App Store에 배포 할때 에러가 발생하게 됩니다. 따라서 아래 스크립트를 이용해서 빌드시에 필요한 framework만 빌드하도록 합니다.
+
+- Target -> Build Phases -> Run Script를 추가합니다.
+![merge](./img/sdk-5.png)
+- Run Script 부분에 아래 스크립트를 추가합니다.
+
+```javascript
+APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
+
+# This script loops through the frameworks embedded in the application and
+# removes unused architectures.
+# find "$APP_PATH" -name '*.framework' -type d | while read -r FRAMEWORK
+find "$APP_PATH" -name 'viscuitSDK.framework' -type d | while read -r FRAMEWORK
+do
+FRAMEWORK_EXECUTABLE_NAME=$(defaults read "$FRAMEWORK/Info.plist" CFBundleExecutable)
+FRAMEWORK_EXECUTABLE_PATH="$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME"
+echo "Executable is $FRAMEWORK_EXECUTABLE_PATH"
+
+EXTRACTED_ARCHS=()
+
+for ARCH in $ARCHS
+do
+echo "Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME"
+lipo -extract "$ARCH" "$FRAMEWORK_EXECUTABLE_PATH" -o "$FRAMEWORK_EXECUTABLE_PATH-$ARCH"
+EXTRACTED_ARCHS+=("$FRAMEWORK_EXECUTABLE_PATH-$ARCH")
+done
+
+echo "Merging extracted architectures: ${ARCHS}"
+lipo -o "$FRAMEWORK_EXECUTABLE_PATH-merged" -create "${EXTRACTED_ARCHS[@]}"
+rm "${EXTRACTED_ARCHS[@]}"
+
+echo "Replacing original executable with thinned version"
+rm "$FRAMEWORK_EXECUTABLE_PATH"
+mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
+
+done
+```
