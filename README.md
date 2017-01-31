@@ -21,14 +21,20 @@
 
 ## VISCUIT SDK 구성
 - framework/merge/viscuit_framework (32bit / 64bit merge된 framework)
-> lipo -info merge/viscuitSDK.framework/viscuitSDK
+
+	> lipo -info merge/viscuitSDK.framework/viscuitSDK
 Architectures in the fat file: viscuitSDK.framework/viscuitSDK are: <font color="red">x86_64 i386 armv7 armv7s arm64</font>
+
 - framework/iphoneos/viscuit_framework (64bit)
-> lipo -info iphonesimulator/viscuitSDK.framework/viscuitSDK
+
+	> lipo -info iphonesimulator/viscuitSDK.framework/viscuitSDK
 Architectures in the fat file: viscuitSDK.framework/viscuitSDK are: <font color="red">i386 x86_64</font>
+
 - framework/iphonesimulator/viscuit_framework (32bit)
-> lipo -info iphoneos/viscuitSDK.framework/viscuitSDK
+
+	> lipo -info iphoneos/viscuitSDK.framework/viscuitSDK
 Architectures in the fat file: viscuitSDK.framework/viscuitSDK are: <font color="red">armv7 arm64</font>
+
 - sample (샘플 프로젝트)
 
 > merge framework를 이용하실 경우에는 [Merge Framework적용](#3-merge-framework적용)을 확인해 주세요.
