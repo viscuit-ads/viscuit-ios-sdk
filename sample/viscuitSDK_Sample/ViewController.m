@@ -27,6 +27,14 @@
     [ViscuitSDK viscuitShow:self];
 }
 
+
+- (IBAction)viscuitAdCheck:(id)sender {
+    //광고 체크
+    
+    [ViscuitSDK checkAdStatus];
+}
+
+
 /*
  Callback Message Type
  Success : 광고 시청 완료 (리워드 지급 조건) Skip : 광고 시청중 Skip 클릭
@@ -51,6 +59,12 @@
         case SKIP:
             NSLog(@"Viscuit 광고 스킵");
             [self.view makeToast:@"SKIP"];
+            break;
+        case CHECK_NOAD:
+            NSLog(@"Viscuit 체크 광고 없음");
+            break;
+        case CHECK_ADREADY:
+            NSLog(@"Viscuit 체크 광고 준비됨.");
             break;
         default:
             break;

@@ -15,6 +15,7 @@
     	* [2.2 VISCUIT 초기화](#22-viscuit-초기화)
     	* [2.3 콜백을 받기 위한 리스너 등록 및 광고 호출](#23-콜백을-받기-위한-리스너-등록-및-광고-호출)
     	* [2.4 광고 호출](#24-광고-호출)
+    	* [2.5 광고 존재 여부 확인](#25-광고-존재-여부-확인)
     	* [3. Merge Framework적용](#3-merge-framework적용)
 
 ---
@@ -155,7 +156,16 @@ Callback 메소드 구현
 
 
 
-####3. Merge Framework적용
+####2.5 광고 존재 여부 확인
+현재 시청 가능한 광고에 존재 여부를 확인한다. CallBack의 CHECK_NOAD, CHECK_ADREADY 이벤트가 발생한다.
+
+```objectivec
+//광고 재생
+[ViscuitSDK viscuitShow:self];
+```
+
+
+###3. Merge Framework적용
 > viscuitSDK는 현재 pods으로 배포 되어 있지 않습니다. 따라서 가상머신으로 개발을 할때 가상머신용(32bit)과 배포용(64bit) 프래임워크를 상황에 맞게 import 해서 빌드 하여야 합니다.
  이 부분을 개선한 방법이 두가지 버전을 합친 merge framework입니다. 32bit/64bit 합쳐진 framework의 경우 App Store에 배포 할때 에러가 발생하게 됩니다. 따라서 아래 스크립트를 이용해서 빌드시에 필요한 framework만 빌드하도록 합니다.
 

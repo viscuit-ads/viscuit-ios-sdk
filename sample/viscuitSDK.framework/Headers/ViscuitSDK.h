@@ -13,7 +13,9 @@ enum ViscuitResult {
     SUCCESS,
     NOAD,
     ERROR,
-    SKIP
+    SKIP,
+    CHECK_ADREADY,
+    CHECK_NOAD
 };
 
 @protocol ViscuitDelegate <NSObject>
@@ -28,6 +30,9 @@ enum ViscuitResult {
 + (void) setDevType:(BOOL) isDevType;
 + (void) viscuitShow:(UIViewController *) mainController;
 + (void) delegate:(id<ViscuitDelegate>) delegate;
++ (void) checkAdStatus;
+
+
 @property (nonatomic, weak) id <ViscuitDelegate> delegate;
 
 @end
