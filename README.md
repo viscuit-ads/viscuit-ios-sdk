@@ -124,7 +124,7 @@ Callback 메소드 구현
 //Callback 함수 작성
 - (void) viscuitCallBack:(enum ViscuitResult) v_result {
     switch (v_result) {
-        case SUCCESS:
+		case SUCCESS:
             NSLog(@"Viscuit 광고 정상 시청 완료");
             [self.view makeToast:@"SUCCESS"];
             break;
@@ -139,6 +139,12 @@ Callback 메소드 구현
         case SKIP:
             NSLog(@"Viscuit 광고 스킵");
             [self.view makeToast:@"SKIP"];
+            break;
+        case CHECK_NOAD:
+            NSLog(@"Viscuit 체크 광고 없음");
+            break;
+        case CHECK_ADREADY:
+            NSLog(@"Viscuit 체크 광고 준비됨.");
             break;
         default:
             break;
