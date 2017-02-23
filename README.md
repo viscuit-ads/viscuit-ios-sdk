@@ -160,8 +160,8 @@ Callback 메소드 구현
 현재 시청 가능한 광고에 존재 여부를 확인한다. CallBack의 CHECK_NOAD, CHECK_ADREADY 이벤트가 발생한다.
 
 ```objectivec
-//광고 재생
-[ViscuitSDK viscuitShow:self];
+//광고 체크
+[ViscuitSDK checkAdStatus];
 ```
 
 
