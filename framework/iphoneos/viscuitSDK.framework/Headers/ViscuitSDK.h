@@ -7,21 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViscuitCategory.h"
 
 enum ViscuitResult {
     SUCCESS,
     NOAD,
     ERROR,
-    SKIP,
-    CHECK_ADREADY,
-    CHECK_NOAD
+    SKIP
 };
 
 @protocol ViscuitDelegate <NSObject>
 - (void) viscuitCallBack:(enum ViscuitResult) result;
 @end
-
 
 @interface ViscuitSDK : NSObject
 
@@ -30,8 +26,11 @@ enum ViscuitResult {
 + (void) setDevType:(BOOL) isDevType;
 + (void) viscuitShow:(UIViewController *) mainController;
 + (void) delegate:(id<ViscuitDelegate>) delegate;
-+ (void) checkAdStatus;
-
++ (void) reloadAdStatus;
++ (void) reloadAdStatus:(void (^)())callback;
++ (BOOL) isAdReady;
++ (NSString *) getSDKVersion;
++ (void) setSDKVersion:(NSString *) version;
 
 @property (nonatomic, weak) id <ViscuitDelegate> delegate;
 

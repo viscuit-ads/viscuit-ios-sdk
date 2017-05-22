@@ -4,45 +4,34 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/ViscuitCategory.h</key>
-		<data>
-		CnTMWeWMIsQ6ud5b8evCYzbQ374=
-		</data>
 		<key>Headers/ViscuitSDK.h</key>
 		<data>
-		7GIl1OMfX12vyyy47rDIEX/5kA8=
+		6lvddXW+MgNACVdQ+cE7/GKwm1w=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JDZy7vDXpTAl+JV4oJKvq0wrkyc=
+		+Bu2pb6+v2qcIBI5stDo/rdD0cc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		wtcKSvla0tNn5i6SGRQ32mW3/Vs=
 		</data>
+		<key>PrivateHeaders/ViscuitCategory.h</key>
+		<data>
+		7P7H1AEgtiDeWwkqDzTgUo8Djhs=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/ViscuitCategory.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CnTMWeWMIsQ6ud5b8evCYzbQ374=
-			</data>
-			<key>hash2</key>
-			<data>
-			jsJ4zX7oc4nL3StOAWQUoAEMo3V3bNEHYYJdIobUBV8=
-			</data>
-		</dict>
 		<key>Headers/ViscuitSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7GIl1OMfX12vyyy47rDIEX/5kA8=
+			6lvddXW+MgNACVdQ+cE7/GKwm1w=
 			</data>
 			<key>hash2</key>
 			<data>
-			OiJnrQXBd80vaugUyuakN+GzlnvY2I0StyklMTvNQzI=
+			Wb9nALoUJK4PrTd9wZ63A24Eos5dqTar68ka/Smosms=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -54,6 +43,17 @@
 			<key>hash2</key>
 			<data>
 			bUsynqf1xVr7kpUDhiPAcd82KMrqEWB8EoBDtvbIExA=
+			</data>
+		</dict>
+		<key>PrivateHeaders/ViscuitCategory.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7P7H1AEgtiDeWwkqDzTgUo8Djhs=
+			</data>
+			<key>hash2</key>
+			<data>
+			GnoUIReVFhbjoUtwlV6dKjp/Inzb8cGq686W41J0bOw=
 			</data>
 		</dict>
 	</dict>

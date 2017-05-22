@@ -5,7 +5,7 @@
 //  Created by KangHo Lee on 2016. 12. 21..
 //  Copyright © 2016년 seokjun lee. All rights reserved.
 //
-
+//  이거 이제 안씀.
 #import <UIKit/UIKit.h>
 
 @interface ViscuitCategory : NSObject
