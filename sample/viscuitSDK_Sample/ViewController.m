@@ -22,6 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // AppDelegate에 한번 선언하시는것이 좋습니다.
+    [ViscuitSDK init:@"viscuit" slotCode:@"test_ads"];
+    
     // 개발, 상용 환경 설정 ( true : 샘플 / false : 상용 )
     // 해당 메소드는 샘플 광고만 노출 되도록 합니다.
     [ViscuitSDK setDevType:YES];

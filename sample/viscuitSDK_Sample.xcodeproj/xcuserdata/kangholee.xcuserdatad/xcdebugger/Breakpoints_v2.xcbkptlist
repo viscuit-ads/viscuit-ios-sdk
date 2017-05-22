@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "viscuitSDK_Sample/ViewController.m"
-            timestampString = "516263687.707783"
+            timestampString = "517118577.659855"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "-onViscuitTimerShow"
             landmarkType = "7">
          </BreakpointContent>
