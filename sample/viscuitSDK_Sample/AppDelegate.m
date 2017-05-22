@@ -17,9 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [ViscuitSDK init:@"viscuit" slotCode:@"test_ads"];
-    //개발, 상용 환경 설정 ( true : 개발 / false : 상용 )
-    [ViscuitSDK setDevType:YES];
+    [ViscuitSDK init:@"mediaCode를 넣어주세요" slotCode:@"slot Code를 넣어주세요"];
+    
     return YES;
 }
 

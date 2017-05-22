@@ -15,7 +15,8 @@
     	* [2.2 VISCUIT 초기화](#22-viscuit-초기화)
     	* [2.3 콜백을 받기 위한 리스너 등록 및 광고 호출](#23-콜백을-받기-위한-리스너-등록-및-광고-호출)
     	* [2.4 광고 호출](#24-광고-호출)
-    	* [2.5 광고 존재 여부 확인](#25-광고-존재-여부-확인)
+    	* [2.5 광고 정보 갱신하기](#25-광고-정보-갱신하기)
+    	* [2.6 광고 상태 체크](#25-광고-상태-체크)
     * [3. Merge Framework적용](#3-merge-framework적용)
 
 ---
@@ -140,12 +141,6 @@ Callback 메소드 구현
             NSLog(@"Viscuit 광고 스킵");
             [self.view makeToast:@"SKIP"];
             break;
-        case CHECK_NOAD:
-            NSLog(@"Viscuit 체크 광고 없음");
-            break;
-        case CHECK_ADREADY:
-            NSLog(@"Viscuit 체크 광고 준비됨.");
-            break;
         default:
             break;
     }
@@ -162,13 +157,28 @@ Callback 메소드 구현
 
 
 
-####2.5 광고 존재 여부 확인
-현재 시청 가능한 광고에 존재 여부를 확인한다. CallBack의 CHECK_NOAD, CHECK_ADREADY 이벤트가 발생한다.
+####2.5 광고 정보 갱신하기
+서버로부터 최신의 광고 데이터를 받아온다.
 
 ```objectivec
 //광고 체크
-[ViscuitSDK checkAdStatus];
+[ViscuitSDK reloadAdStatus];
+
+// 최신 광고 상태를 가져오는 시점에 콜백을 받을수 있습니다.
+[ViscuitSDK reloadAdStatus:^{
+}];
 ```
+
+
+####2.6 광고 상태 체크
+SDK 내부에 있는 광고 상태를 리턴한다.
+[ViscuitSDK reloadAdStatus]를 호출 함으로써 최신의 정보로 갱신이 가능하다.
+
+```objectivec
+//광고 체크
+(BOOL)[ViscuitSDK isAdReady];
+```
+
 
 
 ###3. Merge Framework적용

@@ -8,8 +8,12 @@
 
 #import "ViewController.h"
 #import "Toast.h"
+#import "VSTimerLabel.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet VSTimerLabel *mVSTimer;
+@property (weak, nonatomic) IBOutlet UILabel *mVSVersion;
 
 @end
 
@@ -17,21 +21,64 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
+    // 개발, 상용 환경 설정 ( true : 샘플 / false : 상용 )
+    // 해당 메소드는 샘플 광고만 노출 되도록 합니다.
+    [ViscuitSDK setDevType:YES];
     [ViscuitSDK delegate:self];
-}
-
-- (IBAction)viscuitAdPlay:(UIButton *)sender {
-    //광고 재생
-    [ViscuitSDK viscuitShow:self];
-}
-
-
-- (IBAction)viscuitAdCheck:(id)sender {
-    //광고 체크
     
-    [ViscuitSDK checkAdStatus];
+    
+    
+    //타이머에 기본 문구 설정
+    _mVSTimer.defaultText = @"권장 요청 샘플";
+    
+    
+    
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc]
+                                                    initWithTarget:self
+                                                    action:@selector(onViscuitTimerShow)];
+    
+    tapGestureRecognizer.numberOfTapsRequired = 1;
+    tapGestureRecognizer.numberOfTouchesRequired = 1;
+    _mVSTimer.userInteractionEnabled = YES;
+    [_mVSTimer addGestureRecognizer:tapGestureRecognizer];
+    
+    
+    // 버전 문구 
+    self.mVSVersion.text = [NSString stringWithFormat:@"비스킷 SDK : %@", [ViscuitSDK getSDKVersion]];
+}
+
+
+- (IBAction)onViscuitInitClick:(id)sender {
+    // AppDelegate에 didFinishLaunchingWithOptions에 최초 한번 실행호출하는것이 효율적입니다.
+    [ViscuitSDK init:@"mediaCode를 넣어주세요" slotCode:@"slot Code를 넣어주세요"];
+}
+
+
+- (IBAction)onViscuitReload:(id)sender {
+    // 뷰가 노출 되는 시점에 광고정보를 갱신하기에 적합합니다.
+    //[ViscuitSDK reloadAdStatus];
+    
+    // 최신 광고 상태를 가져오는 시점에 콜백을 받을수 있습니다.
+    [ViscuitSDK reloadAdStatus:^{
+        [self onViscuitAdCheck:sender];
+    }];
+
+}
+
+- (IBAction)onViscuitAdCheck:(id)sender {
+    // 광고 체크
+    if([ViscuitSDK isAdReady]) {
+        [self.view makeToast:@"AD READY"];
+    } else {
+        [self.view makeToast:@"NOAD"];
+    }
+}
+
+
+- (void) onViscuitTimerShow {
+    //광고 보기
+    [ViscuitSDK viscuitShow:self];
 }
 
 
@@ -47,6 +94,7 @@
         case SUCCESS:
             NSLog(@"Viscuit 광고 정상 시청 완료");
             [self.view makeToast:@"SUCCESS"];
+            [self startVSTimer];
             break;
         case NOAD:
             NSLog(@"Viscuit 가용 광고 없음");
@@ -59,17 +107,20 @@
         case SKIP:
             NSLog(@"Viscuit 광고 스킵");
             [self.view makeToast:@"SKIP"];
-            break;
-        case CHECK_NOAD:
-            NSLog(@"Viscuit 체크 광고 없음");
-            break;
-        case CHECK_ADREADY:
-            NSLog(@"Viscuit 체크 광고 준비됨.");
+            [self startVSTimer];
             break;
         default:
             break;
     }
-    
+}
+
+
+-(void) startVSTimer {
+    if(self.mVSTimer != nil) {
+        // 광고 시청 후에 일정시간 시청을 하지 못하게 한다.
+        [self.mVSTimer setCountDownTime:10];
+        [self.mVSTimer start];
+    }
 }
 
 

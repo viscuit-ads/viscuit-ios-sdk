@@ -12,29 +12,33 @@
 		88BA63D71D9524EA00768E94 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BA63D61D9524EA00768E94 /* CoreTelephony.framework */; };
 		88BA63D91D9524EF00768E94 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BA63D81D9524EF00768E94 /* AdSupport.framework */; };
 		88BA63DB1D9524F400768E94 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BA63DA1D9524F400768E94 /* libsqlite3.tbd */; };
-		B736AC5F1E137D8100EEAD21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B736AC5B1E137D8100EEAD21 /* main.m */; };
-		B736AC601E137D8100EEAD21 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = B736AC5C1E137D8100EEAD21 /* Toast.m */; };
-		B736AC611E137D8100EEAD21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B736AC5D1E137D8100EEAD21 /* ViewController.m */; };
-		B736AC631E137DD600EEAD21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B736AC621E137DD600EEAD21 /* AppDelegate.m */; };
-		B736AC681E137E1300EEAD21 /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B736AC651E137E1300EEAD21 /* AppDelegate.h */; };
-		B736AC691E137E1300EEAD21 /* Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = B736AC661E137E1300EEAD21 /* Toast.h */; };
-		B736AC6A1E137E1300EEAD21 /* ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B736AC671E137E1300EEAD21 /* ViewController.h */; };
-		B7A3961B1E13B15400D3DA07 /* viscuitSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A3961A1E13B15400D3DA07 /* viscuitSDK.framework */; };
-		B7A3961C1E13B15400D3DA07 /* viscuitSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7A3961A1E13B15400D3DA07 /* viscuitSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B7B813821EC32B9700D42EB6 /* viscuitSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B813811EC32B9700D42EB6 /* viscuitSDK.framework */; };
+		B7B813831EC32B9700D42EB6 /* viscuitSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7B813811EC32B9700D42EB6 /* viscuitSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B7CDC4131EC316750070CCEB /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CDC40C1EC316750070CCEB /* AppDelegate.h */; };
+		B7CDC4141EC316750070CCEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CDC40D1EC316750070CCEB /* AppDelegate.m */; };
+		B7CDC4151EC316750070CCEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CDC40E1EC316750070CCEB /* main.m */; };
+		B7CDC4161EC316750070CCEB /* Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CDC40F1EC316750070CCEB /* Toast.h */; };
+		B7CDC4171EC316750070CCEB /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CDC4101EC316750070CCEB /* Toast.m */; };
+		B7CDC4181EC316750070CCEB /* ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CDC4111EC316750070CCEB /* ViewController.h */; };
+		B7CDC4191EC316750070CCEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CDC4121EC316750070CCEB /* ViewController.m */; };
 		B7DC32CC1E12486800E0B240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7DC32CB1E12486800E0B240 /* Assets.xcassets */; };
 		B7DC32D11E12487F00E0B240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DC32CD1E12487F00E0B240 /* LaunchScreen.storyboard */; };
 		B7DC32D21E12487F00E0B240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DC32CF1E12487F00E0B240 /* Main.storyboard */; };
 		B7DC32E91E12643500E0B240 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BA63DC1D9524F900768E94 /* SystemConfiguration.framework */; };
+		B7DD1DA41ECC461D000C7671 /* MZTimerLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = B7DD1DA01ECC461D000C7671 /* MZTimerLabel.h */; };
+		B7DD1DA51ECC461D000C7671 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DD1DA11ECC461D000C7671 /* MZTimerLabel.m */; };
+		B7DD1DA61ECC461D000C7671 /* VSTimerLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = B7DD1DA21ECC461D000C7671 /* VSTimerLabel.h */; };
+		B7DD1DA71ECC461D000C7671 /* VSTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DD1DA31ECC461D000C7671 /* VSTimerLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B7A3961D1E13B15400D3DA07 /* Embed Frameworks */ = {
+		B7B813801EC32B5600D42EB6 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B7A3961C1E13B15400D3DA07 /* viscuitSDK.framework in Embed Frameworks */,
+				B7B813831EC32B9700D42EB6 /* viscuitSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,18 +53,22 @@
 		88BA63D81D9524EF00768E94 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		88BA63DA1D9524F400768E94 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		88BA63DC1D9524F900768E94 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		B736AC5B1E137D8100EEAD21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = viscuitSDK_Sample/main.m; sourceTree = "<group>"; };
-		B736AC5C1E137D8100EEAD21 /* Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Toast.m; path = viscuitSDK_Sample/Toast.m; sourceTree = "<group>"; };
-		B736AC5D1E137D8100EEAD21 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = viscuitSDK_Sample/ViewController.m; sourceTree = "<group>"; };
-		B736AC621E137DD600EEAD21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = viscuitSDK_Sample/AppDelegate.m; sourceTree = "<group>"; };
-		B736AC651E137E1300EEAD21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = viscuitSDK_Sample/AppDelegate.h; sourceTree = "<group>"; };
-		B736AC661E137E1300EEAD21 /* Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Toast.h; path = viscuitSDK_Sample/Toast.h; sourceTree = "<group>"; };
-		B736AC671E137E1300EEAD21 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = viscuitSDK_Sample/ViewController.h; sourceTree = "<group>"; };
-		B7A3961A1E13B15400D3DA07 /* viscuitSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = viscuitSDK.framework; sourceTree = "<group>"; };
+		B7B813811EC32B9700D42EB6 /* viscuitSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = viscuitSDK.framework; sourceTree = "<group>"; };
+		B7CDC40C1EC316750070CCEB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = viscuitSDK_Sample/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		B7CDC40D1EC316750070CCEB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = viscuitSDK_Sample/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		B7CDC40E1EC316750070CCEB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = viscuitSDK_Sample/main.m; sourceTree = SOURCE_ROOT; };
+		B7CDC40F1EC316750070CCEB /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Toast.h; path = viscuitSDK_Sample/Toast.h; sourceTree = SOURCE_ROOT; };
+		B7CDC4101EC316750070CCEB /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Toast.m; path = viscuitSDK_Sample/Toast.m; sourceTree = SOURCE_ROOT; };
+		B7CDC4111EC316750070CCEB /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = viscuitSDK_Sample/ViewController.h; sourceTree = SOURCE_ROOT; };
+		B7CDC4121EC316750070CCEB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = viscuitSDK_Sample/ViewController.m; sourceTree = SOURCE_ROOT; };
 		B7DC32C91E12485F00E0B240 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = viscuitSDK_Sample/Info.plist; sourceTree = SOURCE_ROOT; };
 		B7DC32CB1E12486800E0B240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = viscuitSDK_Sample/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		B7DC32CE1E12487F00E0B240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = viscuitSDK_Sample/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		B7DC32D01E12487F00E0B240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = viscuitSDK_Sample/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		B7DD1DA01ECC461D000C7671 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MZTimerLabel.h; path = viscuitSDK_Sample/MZTimerLabel.h; sourceTree = SOURCE_ROOT; };
+		B7DD1DA11ECC461D000C7671 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MZTimerLabel.m; path = viscuitSDK_Sample/MZTimerLabel.m; sourceTree = SOURCE_ROOT; };
+		B7DD1DA21ECC461D000C7671 /* VSTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSTimerLabel.h; path = viscuitSDK_Sample/VSTimerLabel.h; sourceTree = SOURCE_ROOT; };
+		B7DD1DA31ECC461D000C7671 /* VSTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSTimerLabel.m; path = viscuitSDK_Sample/VSTimerLabel.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7A3961B1E13B15400D3DA07 /* viscuitSDK.framework in Frameworks */,
+				B7B813821EC32B9700D42EB6 /* viscuitSDK.framework in Frameworks */,
 				B7DC32E91E12643500E0B240 /* SystemConfiguration.framework in Frameworks */,
 				88BA63DB1D9524F400768E94 /* libsqlite3.tbd in Frameworks */,
 				88BA63D91D9524EF00768E94 /* AdSupport.framework in Frameworks */,
@@ -84,14 +92,7 @@
 		88AA89D41D950F0900E3A83B = {
 			isa = PBXGroup;
 			children = (
-				B7A3961A1E13B15400D3DA07 /* viscuitSDK.framework */,
-				B736AC651E137E1300EEAD21 /* AppDelegate.h */,
-				B736AC621E137DD600EEAD21 /* AppDelegate.m */,
-				B736AC661E137E1300EEAD21 /* Toast.h */,
-				B736AC5C1E137D8100EEAD21 /* Toast.m */,
-				B736AC671E137E1300EEAD21 /* ViewController.h */,
-				B736AC5D1E137D8100EEAD21 /* ViewController.m */,
-				B736AC5B1E137D8100EEAD21 /* main.m */,
+				B7B813811EC32B9700D42EB6 /* viscuitSDK.framework */,
 				88AA89DF1D950F0900E3A83B /* viscuitSDK_Sample */,
 				88AA89DE1D950F0900E3A83B /* Products */,
 				88BA63D11D9524E100768E94 /* Frameworks */,
@@ -109,11 +110,8 @@
 		88AA89DF1D950F0900E3A83B /* viscuitSDK_Sample */ = {
 			isa = PBXGroup;
 			children = (
+				B7B813841EC32F3D00D42EB6 /* View */,
 				B736AC641E137DE300EEAD21 /* src */,
-				B7DC32CD1E12487F00E0B240 /* LaunchScreen.storyboard */,
-				B7DC32CF1E12487F00E0B240 /* Main.storyboard */,
-				B7DC32CB1E12486800E0B240 /* Assets.xcassets */,
-				B7DC32C91E12485F00E0B240 /* Info.plist */,
 				88AA89E01D950F0900E3A83B /* Supporting Files */,
 			);
 			name = viscuitSDK_Sample;
@@ -123,6 +121,11 @@
 		88AA89E01D950F0900E3A83B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B7CDC40E1EC316750070CCEB /* main.m */,
+				B7DC32CD1E12487F00E0B240 /* LaunchScreen.storyboard */,
+				B7DC32CF1E12487F00E0B240 /* Main.storyboard */,
+				B7DC32CB1E12486800E0B240 /* Assets.xcassets */,
+				B7DC32C91E12485F00E0B240 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -143,8 +146,25 @@
 		B736AC641E137DE300EEAD21 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				B7CDC40C1EC316750070CCEB /* AppDelegate.h */,
+				B7CDC40D1EC316750070CCEB /* AppDelegate.m */,
+				B7CDC40F1EC316750070CCEB /* Toast.h */,
+				B7CDC4101EC316750070CCEB /* Toast.m */,
+				B7CDC4111EC316750070CCEB /* ViewController.h */,
+				B7CDC4121EC316750070CCEB /* ViewController.m */,
 			);
 			name = src;
+			sourceTree = "<group>";
+		};
+		B7B813841EC32F3D00D42EB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7DD1DA01ECC461D000C7671 /* MZTimerLabel.h */,
+				B7DD1DA11ECC461D000C7671 /* MZTimerLabel.m */,
+				B7DD1DA21ECC461D000C7671 /* VSTimerLabel.h */,
+				B7DD1DA31ECC461D000C7671 /* VSTimerLabel.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +174,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B736AC681E137E1300EEAD21 /* AppDelegate.h in Headers */,
-				B736AC691E137E1300EEAD21 /* Toast.h in Headers */,
-				B736AC6A1E137E1300EEAD21 /* ViewController.h in Headers */,
+				B7DD1DA61ECC461D000C7671 /* VSTimerLabel.h in Headers */,
+				B7DD1DA41ECC461D000C7671 /* MZTimerLabel.h in Headers */,
+				B7CDC4161EC316750070CCEB /* Toast.h in Headers */,
+				B7CDC4131EC316750070CCEB /* AppDelegate.h in Headers */,
+				B7CDC4181EC316750070CCEB /* ViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,8 +193,7 @@
 				88AA89DA1D950F0900E3A83B /* Frameworks */,
 				88AA89DB1D950F0900E3A83B /* Resources */,
 				B7DC32D61E124C5E00E0B240 /* Headers */,
-				B7A3961D1E13B15400D3DA07 /* Embed Frameworks */,
-				B721F9D01E40781A00691CD1 /* ShellScript */,
+				B7B813801EC32B5600D42EB6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,7 +215,7 @@
 				TargetAttributes = {
 					88AA89DC1D950F0900E3A83B = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 3YE7K4KCGM;
+						DevelopmentTeam = TKX98V73YL;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -230,31 +251,17 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		B721F9D01E40781A00691CD1 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\n# find \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\nfind \"$APP_PATH\" -name 'viscuitSDK.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		88AA89D91D950F0900E3A83B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B736AC631E137DD600EEAD21 /* AppDelegate.m in Sources */,
-				B736AC5F1E137D8100EEAD21 /* main.m in Sources */,
-				B736AC601E137D8100EEAD21 /* Toast.m in Sources */,
-				B736AC611E137D8100EEAD21 /* ViewController.m in Sources */,
+				B7DD1DA51ECC461D000C7671 /* MZTimerLabel.m in Sources */,
+				B7CDC4171EC316750070CCEB /* Toast.m in Sources */,
+				B7CDC4151EC316750070CCEB /* main.m in Sources */,
+				B7DD1DA71ECC461D000C7671 /* VSTimerLabel.m in Sources */,
+				B7CDC4191EC316750070CCEB /* ViewController.m in Sources */,
+				B7CDC4141EC316750070CCEB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +389,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LIBRARY = "libc++";
-				DEVELOPMENT_TEAM = 3YE7K4KCGM;
+				DEVELOPMENT_TEAM = TKX98V73YL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/viscuitSDK_Sample",
@@ -391,11 +398,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/viscuitSDK_Sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "wcorp.viscuitSDK-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -405,7 +411,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LIBRARY = "libc++";
-				DEVELOPMENT_TEAM = 3YE7K4KCGM;
+				DEVELOPMENT_TEAM = TKX98V73YL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/viscuitSDK_Sample",
@@ -418,7 +424,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "wcorp.viscuitSDK-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
